@@ -6,9 +6,38 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* RAJOUT DE CODE*/
 ul{
     list-style: none;
 }
+#logo-chouette{
+    text-align: center;
+}
+.logo-chouette{
+    float: left;
+}
+li > a{
+    color: #000000;
+}
+.container{
+    margin: auto;
+}
+form{
+    color: #000000;
+}
+p{
+    text-align: center;
+    color: #000000;
+}
+blockquote{
+    color: #364577;
+}
+legend{
+    font-size: large;
+}
+
+/*FIN DE RAJOUT DE CODES*/
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -44,6 +73,7 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
 }
 
 .bloc-lg {
@@ -82,7 +112,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
+/*.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -93,13 +123,13 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.jpg");
     background-size: 280px 280px;
 }
 
 .b-parallax {
     background-attachment: fixed;
-}
+}*/
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
@@ -133,10 +163,14 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
+.d-bloc h6 a{
     color: rgba(255, 255, 255, .6);
 }
+
+.d-bloc p a {
+    color: #000000;
+}
+
 
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
@@ -640,14 +674,13 @@ a[data-lightbox]:hover img {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
+h3{
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #f3976c;
@@ -676,7 +709,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -735,7 +768,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .portfolio-thumb {
@@ -752,13 +785,11 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
 }
-
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
 .bgc-white {
@@ -770,27 +801,24 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: darkorange;
 }
 
 .tc-white {
-    color: #F3976C;
+    color: #000000;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: darkorange;
     color: #FFFFFF;
 }
-
 .btn-atomic-tangerine:hover {
     background: #c27956;
     color: #FFFFFF;
 }
-
 .ltc-white {
-    color: #FFFFFF;
+    color: #000;
 }
-
 .ltc-white:hover {
     color: #cccccc;
 }
@@ -798,30 +826,26 @@ h4 {
 .ltc-atomic-tangerine {
     color: #F3976C;
 }
-
 .ltc-atomic-tangerine:hover {
     color: #c27956;
 }
-
 .icon-dark-slate-blue {
     color: #364577;
     border-color: #364577;
 }
-
-.bg-dots-bg {
+/*.bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+}*/
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
-
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -896,6 +920,7 @@ h4 {
     h1,
     h2,
     h3,
+    p
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
